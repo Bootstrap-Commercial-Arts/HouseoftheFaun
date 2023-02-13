@@ -1,0 +1,31 @@
+{
+  "name": "houseofthefaun",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "bythebootstrap <schad@bythebootstrap.us>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.35.5",
+    "@sanity/client": "^4.0.1",
+    "@sanity/core": "^2.35.6",
+    "@sanity/default-layout": "^2.35.5",
+    "@sanity/default-login": "^2.35.5",
+    "@sanity/desk-tool": "^2.35.5",
+    "@sanity/icons": "^2.2.2",
+    "@sanity/resolver": "^2.35.3",
+    "@sanity/vision": "^3.3.1",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "styled-components": "^5.2.0"
+  }
+}
