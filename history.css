@@ -1,0 +1,91 @@
+#history-grid-1 {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+h3 {
+    font-family: Cormorant;
+    font-size:3.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.hg1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-image: url(/HouseoftheFaun/images/history-1.jpg);
+    min-height: 40rem;
+    background-size: cover;
+    background-position: center;
+}
+.hg2 { grid-area: 2 / 1 / 4 / 2; }
+.hg3 { 
+    grid-area: 1 / 2 / 3 / 3; 
+    background-image: url(/HouseoftheFaun/images/bio-pic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.hg4 { 
+    grid-area: 3 / 2 / 4 / 3; 
+    min-height: 20rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.hg4 h4 {
+    font-size: 3.25rem;
+    line-height: 1.4;
+}
+
+p {font-size: 2rem; line-height: 1.4;}
+
+#watermark {
+    transform: rotate(-20deg)scale(80%);
+    opacity: 50%;
+}
+
+#front {
+    z-index: 100;
+    position: relative;
+    max-width: 80rem;
+    margin: -20rem auto 2rem;
+}
+
+#history-columns {
+    column-count: 2;
+}
+
+figure {padding: 1rem 0;}
+
+figcaption {
+    font-family: Cormorant;
+    font-size: 1.5rem;
+    color: var(--dark);
+    font-style: italic;
+}
+
+figcaption a {
+    text-decoration: underline;
+    color: var(--dark);
+}
+
+.divider-1 {
+    padding: 2rem 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 680px) {
+    #history-columns {
+        column-count: 1;
+    }
+    #history-grid-1 {display: block;}
+    .hg2 {
+        padding: 2rem 0;
+    }
+    .hg3 {min-height: 50rem;}
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;}
+}

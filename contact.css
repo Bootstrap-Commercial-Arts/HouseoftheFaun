@@ -1,0 +1,82 @@
+main p {
+    font-size: 2rem;
+}
+
+main a {
+    color: var(--dark);
+    font-size: 2rem;
+}
+
+#hero {
+    height:50rem;
+    background-size: cover;
+    background-image: url(/HouseoftheFaun/images/contact-hero.jpg);
+    background-position-y: center;
+}
+
+#contact-social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#contact-social a {
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+#contact-social p {
+    padding-left: 1rem;
+    font-family: montserrat;
+    text-transform: uppercase;
+}
+
+#contact-phone {
+    font-size: 3rem;
+    display: inline-block;
+}
+
+#contact-address {
+    padding-top: 2rem;
+    display: inline-block;
+}
+
+h3 {
+    font-size:3rem;
+    padding-bottom: 1rem;
+}
+
+main input, main textarea {
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: calc(100% - 2rem);
+    font-family: montserrat;
+    color: var(--dark);
+}
+
+::placeholder {font-style: italic;}
+
+.gold-button{
+    border:none;
+    font-family: Cormorant;
+    color:var(--dark);
+    cursor: pointer;
+    margin-left: auto;
+}
+.gold-button:hover {
+    filter:invert(30%);
+}
+
+
+
+
+@media screen and (max-width: 680px) {
+    #contact-social{
+        justify-content: center;
+    }
+    #contact-address, #contact-phone{display:block; text-align: center;}
+}

@@ -1,0 +1,196 @@
+#hero {
+    height:50rem;
+    background-size: cover;
+    background-image: url(/HouseoftheFaun/images/home-hero.jpg);
+
+}
+
+h1 {
+    font-family: Cormorant;
+    font-weight: 700;
+    color: var(--dark);
+    padding-bottom: 2rem;
+    font-size: 3.4rem;
+    line-height: 1.2;
+}
+
+main p {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: 100;
+}
+
+#divider-1 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+#watermark {
+    transform: rotate(-20deg);
+    opacity: 50%;
+}
+
+#front {
+    z-index: 100;
+    position: relative;
+    max-width: 80rem;
+    margin: -20rem auto 2rem;
+}
+
+.watermark-row {
+    text-align: center;
+    transform: translateY(-3rem);
+}
+
+#home-photo-2 {
+    background-image: url(/HouseoftheFaun/images/home-2.jpg);
+    background-size: cover;
+}
+
+h2 {
+    font-family: montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -4rem;
+    font-size: 2rem;
+    margin-bottom:1.5rem;
+}
+
+#globally-sourced {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    max-width: 1200px;
+}
+
+.sourced1 { 
+    grid-area: 1 / 1 / 3 / 2; 
+    background-image: url(/HouseoftheFaun/images/sourced1.jpg);
+    background-size: cover;
+}
+.sourced2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    background-image: url(/HouseoftheFaun/images/sourced2.jpg);
+    background-size: cover;
+}
+.sourced3 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-image: url(/HouseoftheFaun/images/sourced3.jpg);
+    background-size: cover;
+}
+.sourced4 { 
+    grid-area: 1 / 3 / 3 / 4;
+    border: 2px dotted var(--dark);
+    outline: 2px solid var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    outline-offset: 2px;
+    margin: 0.3rem;
+}
+
+.sourced4 ul {
+    column-count: 2;
+
+    font-family: Cormorant;
+    font-weight: 100;
+    font-size: 2rem;
+    padding:1rem;
+}
+
+.sourced4 ul > li:before {
+    content: "- ";
+}
+
+.sourced4 h2 {
+    margin-top: -5rem;
+}
+
+#community {
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+#home-bottom {
+    background-image: url(/HouseoftheFaun/images/home-bottom.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-position-y: center;
+}
+
+h4 {
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size:1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+
+#goods li {
+    font-size: 1.5rem;
+    color: var(--dark);
+    font-family: Cormorant;
+    line-height: 1.4;
+}
+
+#goods ul > li:before {
+    content: "- ";
+}
+
+#goods {
+    padding-bottom: 2rem;
+}
+
+#community-row {
+    padding-top: 2rem;
+}
+
+#community-row h2{
+    font-size: 3rem;
+}
+/* Media Queries */
+
+@media screen and (max-width: 680px) {
+    #community {
+        column-count: 1;
+    }
+
+    #globally-sourced {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(2, 20rem);
+    }
+    .sourced1 { grid-area: 2 / 1 / 4 / 2; }
+    .sourced2 { grid-area: 2 / 2 / 3 / 3; }
+    .sourced3 { grid-area: 3 / 2 / 4 / 3; }
+    .sourced4 { grid-area: 1 / 1 / 2 / 3; }
+    .sourced4 h2 {
+        font-size: 3.25rem;
+        margin-top: -8rem;
+    }
+    #community-row {
+        padding-top: 4rem;
+    }
+    #front { margin: -21rem auto 2rem !important }
+
+    .watermark-row { 
+        transform:none !important;
+        margin-bottom: 1rem;
+    }
+
+    .watermark-row h1 { font-size: 2.7rem;}
+
+    #copyright-row {
+        display: block;
+        text-align: center;
+    }
+    #goods {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}

@@ -1,0 +1,59 @@
+#workshop-1 {
+    background-image: url(/HouseoftheFaun/images/workshops.jpg);
+    background-size: cover;
+    min-height: 40rem;
+    margin-bottom: 2rem;
+}
+
+#workshop-2 {
+    width: 25rem;
+    margin-right: 2rem;
+}
+
+h2 {
+    font-family: Cormorant;
+    font-size: 3.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 0;
+}
+
+.flex-column p {
+    padding: 3rem 0;
+    font-size: 2rem;
+}
+
+.gold-button {
+    border: none !important;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.gold-button:hover {
+    filter:invert(30%);
+}
+
+.artisan-row-1 a {
+    text-decoration: underline;
+    color: var(--dark);
+}
+/* Media Queries */
+
+@media screen and (max-width: 680px) {
+    .workshop-row-1 {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    
+    .flex-column {
+        padding-bottom: 2rem;
+        display: block;
+    }
+
+    .flex-column p { padding: .5rem 0;}
+}
