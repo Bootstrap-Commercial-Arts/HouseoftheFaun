@@ -10,7 +10,7 @@ main a {
 #hero {
     height:50rem;
     background-size: cover;
-    background-image: url(/HouseoftheFaun/images/contact-hero.jpg);
+    background-image: url(/images/contact-hero.jpg);
     background-position-y: center;
 }
 

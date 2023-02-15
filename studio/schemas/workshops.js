@@ -34,15 +34,16 @@ export default {
           validation: Rule => Rule.required().precision(2).error('Please enter a number with less than two decimal places')
         },
         {
-          name: 'dateTime',
+          name: 'when',
           title: 'Time & Date',
           type: 'datetime',
+          options: { format: 'h:mm a, MMM D' },
           validation: Rule => Rule.required()
         },
         {
           name: 'description',
           title: 'Description',
-          type: 'string',
+          type: 'text',
           validation: Rule => Rule.required()
         },
       ]

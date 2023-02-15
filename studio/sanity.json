@@ -1,19 +1,17 @@
 {
   "root": true,
-  "project": {
-    "name": "House Of The Faun"
-  },
   "api": {
-    "projectId": "igtfbcsc",
+    "projectId": "dpxaxkqe",
     "dataset": "production"
+  },
+  "project": {
+    "name": "FaunPT"
   },
   "plugins": [
     "@sanity/base",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool",
-    "@sanity/vision",
-    "@sanity/resolver"
+    "@sanity/desk-tool"
   ],
   "env": {
     "development": {

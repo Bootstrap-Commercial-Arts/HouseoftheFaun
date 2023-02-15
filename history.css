@@ -14,7 +14,7 @@ h3 {
 
 .hg1 { 
     grid-area: 1 / 1 / 2 / 2; 
-    background-image: url(/HouseoftheFaun/images/history-1.jpg);
+    background-image: url(/images/history-1.jpg);
     min-height: 40rem;
     background-size: cover;
     background-position: center;
@@ -22,7 +22,7 @@ h3 {
 .hg2 { grid-area: 2 / 1 / 4 / 2; }
 .hg3 { 
     grid-area: 1 / 2 / 3 / 3; 
-    background-image: url(/HouseoftheFaun/images/bio-pic.jpg);
+    background-image: url(/images/bio-pic.jpg);
     background-size: cover;
     background-position: center;
 }

@@ -1,5 +1,5 @@
 #workshop-1 {
-    background-image: url(/HouseoftheFaun/images/workshops.jpg);
+    background-image: url(/images/workshops.jpg);
     background-size: cover;
     min-height: 40rem;
     margin-bottom: 2rem;
@@ -38,14 +38,81 @@ h2 {
     filter:invert(30%);
 }
 
-.artisan-row-1 a {
+main a {
     text-decoration: underline;
     color: var(--dark);
 }
+
+#workshop-row > div{
+    width: calc(50% - 4rem);
+    padding: 2rem;
+}
+
+.top-block-wrapper {
+    display: flex;
+}
+
+.workshop p{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.teacher {
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 1rem;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.top-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-block h5 {
+    font-family: Cormorant;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.top-block h6 {
+    font-family: montserrat;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.top-block p {
+    font-family: montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:1.75rem; 
+    display: inline;
+    margin-right: 2rem;
+}
+
+#workshop-row .gold-button {
+    margin: 2rem 10rem;
+}
+
+.card { 
+    width: 48rem;
+    margin-bottom:2rem;
+    break-inside: avoid-column;
+}
+
+.grid {
+    columns: 2;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 680px) {
-    .workshop-row-1 {
+    #workshop-row-wrap {
         display:flex;
         flex-direction: column-reverse;
     }
@@ -56,4 +123,6 @@ h2 {
     }
 
     .flex-column p { padding: .5rem 0;}
+
+    #workshop-row, .grid {columns: 1;}
 }

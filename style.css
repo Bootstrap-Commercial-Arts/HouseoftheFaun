@@ -6,43 +6,43 @@
 }
 @font-face {
     font-family: CormorantUnicase;
-    src: url(/HouseoftheFaun/fonts/CormorantUnicase-SemiBold.ttf);
+    src: url(/fonts/CormorantUnicase-SemiBold.ttf);
 }
 @font-face {
     font-family: Cormorant;
-    src: url(/HouseoftheFaun/fonts/Cormorant-Medium.ttf);
+    src: url(/fonts/Cormorant-Medium.ttf);
     font-weight: 300;
 }
 @font-face {
     font-family: Cormorant;
-    src: url(/HouseoftheFaun/fonts/Cormorant-Light.ttf);
+    src: url(/fonts/Cormorant-Light.ttf);
     font-weight: 100;
 }
 @font-face {
     font-family: Cormorant;
-    src: url(/HouseoftheFaun/fonts/Cormorant-Bold.ttf);
+    src: url(/fonts/Cormorant-Bold.ttf);
     font-weight: 700;
 }
 @font-face {
     font-family: Cormorant;
-    src: url(/HouseoftheFaun/fonts/Cormorant-MediumItalic.ttf);
+    src: url(/fonts/Cormorant-MediumItalic.ttf);
     font-weight: 300;
     font-style: italic;
 }
 @font-face {
     font-family: montserrat;
-    src: url(/HouseoftheFaun/fonts/Montserrat-Light.ttf);
+    src: url(/fonts/Montserrat-Light.ttf);
     font-weight: 100;
 }
 @font-face {
     font-family: montserrat;
-    src: url(/HouseoftheFaun/fonts/Montserrat-LightItalic.ttf);
+    src: url(/fonts/Montserrat-LightItalic.ttf);
     font-weight: 100;
     font-style: italic;
 }
 @font-face {
     font-family: montserrat;
-    src: url(/HouseoftheFaun/fonts/Montserrat-SemiBold.ttf);
+    src: url(/fonts/Montserrat-SemiBold.ttf);
     font-weight: 700;
 }
 
@@ -61,10 +61,18 @@ img {
     max-width: 100%;
 }
 
+.thumbnail {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    width: 16rem;
+    margin-right:1rem;
+    margin-bottom: 1rem;
+}
+
+
 /* Header & Footer Styles */
 
 header, footer {
-    background-image: url(/HouseoftheFaun/images/dark-texture.jpg);
+    background-image: url(/images/dark-texture.jpg);
     background-repeat: repeat;
 }
 
@@ -193,7 +201,7 @@ footer h3 {
 /* Main Area Styles */
 
 main {
-    background-image: url(/HouseoftheFaun/images/light-texture.jpg);
+    background-image: url(/images/light-texture.jpg);
     background-repeat: repeat;
     min-height: 80vh;
     padding-top: 1rem
@@ -214,6 +222,7 @@ p {
     font-size: 1.5rem;
     text-align: center;
     font-family: Cormorant;
+    text-decoration: none !important;
 }
 
 .hollow-gold-button {
@@ -225,6 +234,7 @@ p {
     text-align: center;
     margin:2rem 0;
     font-family: Cormorant;
+    text-decoration: none !important;
 }
 
 .hollow-gold-button:hover {

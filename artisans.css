@@ -1,5 +1,5 @@
 #artisan-1 {
-    background-image: url(/HouseoftheFaun/images/artisans.jpg);
+    background-image: url(/images/artisans.jpg);
     background-size: cover;
     min-height: 40rem;
 }
@@ -22,6 +22,85 @@ h2 {
     font-size: 2rem;
 }
 
+#artisan-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#artisan-row > div{
+    width: calc(50% - 4rem);
+    padding: 2rem;
+}
+
+.top-block-wrapper {
+    display: flex;
+}
+
+.artisan p{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.teacher {
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 1rem;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.top-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-block h5 {
+    font-family: Cormorant;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.top-block h6 {
+    font-family: montserrat;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.top-block p {
+    font-family: montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:1.75rem; 
+    display: inline;
+    margin-right: 2rem;
+}
+
+#artisan-row .gold-button {
+    margin: 2rem 10rem;
+}
+
+.hollow-gold-button {
+    width: 30%;
+}
+
+.card > img {
+    padding: 2rem 0;
+}
+
+.card { 
+    width: 48rem;
+    margin-bottom:2rem;
+    break-inside: avoid-column;
+}
+
+.grid {
+    columns: 2;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 680px) {
@@ -36,4 +115,14 @@ h2 {
     }
 
     .flex-column p { padding: .5rem 0;}
+
+    #artisan-row {
+        display: block;
+    }
+    
+    #artisan-row > div{
+        display: inline;
+    }
+
+    .grid {columns:1}
 }
