@@ -242,7 +242,19 @@ p {
     filter: invert(0);
 }
 
+/* Empty Message Styling */
+.empty-workshop {
+    text-align: center;
+    padding: 10rem;
+}
 
+.empty-workshop h3 {
+    font-size: 2.5rem;
+}
+
+.empty-workshop a {
+    color: var(--gold);
+}
 
 
 

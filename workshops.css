@@ -48,6 +48,10 @@ main a {
     padding: 2rem;
 }
 
+#workshop-row-wrap {
+    columns: 2;
+}
+
 .top-block-wrapper {
     display: flex;
 }
@@ -105,9 +109,6 @@ main a {
     break-inside: avoid-column;
 }
 
-.grid {
-    columns: 2;
-}
 
 /* Media Queries */
 
