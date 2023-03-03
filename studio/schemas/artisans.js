@@ -18,8 +18,7 @@ export default {
         {
           name: 'shopLink',
           title: 'Shop Link',
-          type: 'url',
-          validation: Rule => Rule.required()
+          type: 'url'
         },
         {
           name: 'image',

@@ -94,11 +94,13 @@ function artisanCall() {
             location.setAttribute("class", "location")
             topBlock.append(location);
 
-            var ticketUrl = document.createElement("a");
-            ticketUrl.setAttribute("class", "hollow-gold-button");
-            ticketUrl.setAttribute("href", artisan.shopLink);
-            ticketUrl.innerHTML = "Shop Online"
-            topBlock.append(ticketUrl)
+            if(artisan.shopLink){
+              var ticketUrl = document.createElement("a");
+              ticketUrl.setAttribute("class", "hollow-gold-button");
+              ticketUrl.setAttribute("href", artisan.shopLink);
+              ticketUrl.innerHTML = "Shop Online"
+              topBlock.append(ticketUrl);
+            }
 
             var divider = document.createElement("img");
             divider.setAttribute("src","/images/home-divider-4.png");
