@@ -54,6 +54,7 @@ main a {
 
 .top-block-wrapper {
     display: flex;
+    align-items: flex-start;
 }
 
 .workshop p{

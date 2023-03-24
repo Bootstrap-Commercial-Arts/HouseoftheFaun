@@ -148,6 +148,8 @@ function workshopCall() {
               teacher.setAttribute("class", "teacher")
               topBlock.append(teacher);
 
+              console.log(workshop.when);
+
               var whenString = document.createElement("p");
               var when = new Date(workshop.when);
               const options = {
@@ -155,7 +157,7 @@ function workshopCall() {
                   day: "numeric",
                   year: "numeric"
                 };
-              whenString.innerHTML = `$${workshop.price}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${truncate(when.toLocaleTimeString('en-US'),4)} ${when.toLocaleTimeString('en-US').slice(7)},  ${when.toLocaleDateString('en-US', options)}`;
+              whenString.innerHTML = `$${workshop.price}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${truncate(when.toLocaleTimeString('en-US'),4)}${when.toLocaleTimeString('en-US').slice(7)},  ${when.toLocaleDateString('en-US', options)}`;
               topBlock.append(whenString);
 
               var ticketUrl = document.createElement("a");
