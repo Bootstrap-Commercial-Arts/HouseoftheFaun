@@ -116,7 +116,7 @@ main a {
 @media screen and (max-width: 680px) {
     #workshop-row-wrap {
         display:flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     
     .flex-column {
